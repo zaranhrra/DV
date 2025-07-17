@@ -10,44 +10,36 @@
       padding: 0; 
       background-color: #FDF5F5; /* Set background color to #FDF5F5 */
     }
+
+    /* Styling for h1 */
     h1 {
       text-align: center;
       padding: 20px;
-      color: #333; /* Dark text color for visibility */
+      margin: 20px;
+      background-color: #fff; /* White background for the heading */
+      border: 2px solid #ddd; /* Light border around the heading */
+      border-radius: 10px; /* Rounded corners for the border */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      color: #333; /* Dark text for contrast */
     }
+
     .tab-container {
       display: flex;
       background: #eee;
-      border: 1px solid #ddd; /* Border around the tab container */
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for the container */
-      margin-bottom: 20px;
     }
+
     .tab-button {
       padding: 10px 20px;
       cursor: pointer;
       border: none;
       background: #ddd;
       margin: 0 5px;
-      border-radius: 5px; /* Rounded corners for the tab buttons */
-      transition: background 0.3s ease; /* Smooth transition for button hover effect */
     }
-    .tab-button.active { 
-      background: #bbb; 
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for active tab button */
-    }
-    .tab-button:hover {
-      background: #ccc; /* Slightly darker background when hovering */
-    }
-    .tab-content { 
-      display: none; 
-      padding: 20px; 
-      border-radius: 8px; /* Rounded corners for content area */
-      background: #fff; /* Light background for content */
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for content */
-      margin-bottom: 20px; /* Space below the content */
-    }
+
+    .tab-button.active { background: #bbb; }
+    .tab-content { display: none; padding: 20px; }
     .tab-content.active { display: block; }
-    iframe { width: 100%; height: 600px; border: none; border-radius: 8px; } /* Rounded iframe */
+    iframe { width: 100%; height: 600px; border: none; }
   </style>
 </head>
 <body>
