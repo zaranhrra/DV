@@ -8,19 +8,18 @@
       font-family: Arial, sans-serif; 
       margin: 0; 
       padding: 0; 
-      background-color: #FDF5F5; /* Set background color to #FDF5F5 */
+      background-color: #FDF5F5; /
     }
 
-    /* Styling for h1 */
     h1 {
       text-align: center;
       padding: 20px;
       margin: 20px;
-      background-color: #fff; /* White background for the heading */
-      border: 2px solid #ddd; /* Light border around the heading */
-      border-radius: 10px; /* Rounded corners for the border */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-      color: #333; /* Dark text for contrast */
+      background-color: #fff; 
+      border: 2px solid #ddd; 
+      border-radius: 10px; 
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+      color: #333; 
     }
 
     .tab-container {
@@ -46,27 +45,27 @@
 
   <h1>Student Enrollment Dashboards</h1>
 
-  <!-- Tab Buttons -->
+ 
   <div class="tab-container">
     <button class="tab-button active" onclick="showTab(0)">Students Enrollment Analysis</button>
   </div>
 
-  <!-- Tab Content -->
+
   <div class="tab-content active">
     <iframe title="DV_SDG_1" width="600" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiNzhkZTJiOTctMjVkYi00YmFlLTg4MTctODllNzZhNmEzMTM3IiwidCI6IjdmMDQ4ZmMxLTJlYTMtNDhlNC1hYzkyLTkxZDFlYjA5ODA3YyIsImMiOjEwfQ%3D%3D&pageName=064a382c59ae7a31b81e" frameborder="0" allowFullScreen="true"></iframe>
   </div>
 
-  <!-- JavaScript to Handle Tab Switching -->
+
   <script>
     function showTab(index) {
       const contents = document.querySelectorAll('.tab-content');
       const buttons = document.querySelectorAll('.tab-button');
       
-      // Hide all tab content and remove active class from all buttons
+
       contents.forEach(c => c.classList.remove('active'));
       buttons.forEach(b => b.classList.remove('active'));
 
-      // Show the selected tab content and add the active class to the corresponding button
+
       contents[index].classList.add('active');
       buttons[index].classList.add('active');
     }
